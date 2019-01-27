@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfólio - Guilherme Luiz</title>
+  <meta name="author" content="Guilherme Luiz Quintino Da Silva" />
+  <meta name="viewport" content="width=device-width, initial-scale: 1.0" />
+	<script src="js/jquery-3.3.1.min.js"></script>
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Gloria+Hallelujah|Pacifico" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+</head>
+<button id="subir"><center><i class="fas fa-chevron-up"></i></center></button>
+<body>
+    <header>
+	<nav>
+		<a href="#"><img src="img/logo.png" /></a>
+		<ul>
+			<li><a class="scroll" href="#weare">QUEM SOU</a></li>
+			<li><a class="scroll" href="#expecializacao">EXPERTISE</a></li>
+            <li><a class="scroll btn" href="#hobbie">HOBBIES</a></li>
+		</ul>
+	</nav>
+	<div class="img">
+		<h1 class="front">Front end</h1>
+    <h1 class="end">Todo homem é o arquiteto de seu próprio destino.</h1>
+	</div>
+      </header>
+     <section>
+     <div id="weare">
+     <div class="container">
+        <br>
+      <div class="row web">
+       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <center><div class="profile"><img src="img/gui.jpg" title="Guilherme Luiz" /></div></center>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text">
+            <div class="am">
+            <h1 class="title">Quem sou</h1>
+            <br>
+            <p>Me chamo Guilherme e sou estudante de análise e desenvolvimento de sistemas, 
+                estou no 5°semestre, estudo na faculdade flamingo campus Lapa SP.
+                 Adquiri algumas skills de Front End quando era estagiário na 
+                 <a href="https://www.superix.com.br/" target="_blank">Superix Web</a></p>          
+            <p>Estou me preparando para trabalhar em desenvolvimento web e APP android.
+                  Atualmente estou fazendo estágio no Serpro, empresa pública privada em processamento de dados. 
+                  Estou em busca de recolocação no mercado como CLT ou PJ na área de desenvolvimento Web.</p>
+            </div>
+       </div>
+      </div>
+     </div>
+     </div>
+     <div id="expecializacao">
+        <center><h1>Conhecimentos</h1></center>
+    <div class="container">
+    <div class="row delay">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 hg">
+     <img src="img/html.png" title="HTML5" class="know" />
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 hg">
+     <img src="img/css.png" title="CSS3" class="know" />
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 hg">
+     <img src="img/script.png" title="JAVASCRIPT" class="know" />
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 hg">
+     <img src="img/bootstrap.png" title="BOOTSTRAP" class="know" />
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+    <div id="hobbie">
+         <div class="container">
+            <div class="row">
+             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <center class="centro"><img class="hob" src="img/guilherme.jpg" /></center>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <h1 class="hb">Hobbies</h1>
+              <p>Sou um amante do futsal, gosto de praticar esportes aos finais de semana e também gosto de jogar um Call Of Duty, Battlefield, Fifa, entre outros.</p>
+             </div>
+             </div>
+             </div>
+         </div>   
+     </div>
+    </section>
+    <footer>
+     <div class="container">
+      <div class="row">
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image">
+    		
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <center><a href="#"><img class="rodape" src="img/logo.png"></a></center>
+        <ul>
+            <li><b>E-mail:</b> gui23091991@gmail.com</li>
+            <li><b>Phone:</b> +55 11 965176412</li>
+        </ul>
+       </div>
+       <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+       </div>
+      </div>
+     </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+       
+       $(".scroll").click(function(event){        
+       event.preventDefault();
+       $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+         });
+
+        $('#subir').hide();
+         $(window).scroll(function(){
+            if($(this).scrollTop() >= 800){
+               $('nav').addClass('menu').fadeIn('slow');
+            }else{
+                $('nav').removeClass('menu');
+            }
+         });
+
+         $(window).scroll(function(){
+            if($(this).scrollTop() <= 900){
+               $('#subir').fadeOut('fast');
+            }else{
+                $('#subir').fadeIn('slow');
+            }
+         });
+
+         $(window).scroll(function(){
+            if($(this).scrollTop() >= 970){
+               $('.profile img').fadeOut('fast');
+            }else{
+               $('.profile img').fadeIn('slow');
+            }
+         });
+
+         $('#subir').click(function(){
+           $('html, body').animate({scrollTop : 0},800);
+         });
+        });
+    </script>
+</body>
+</html>
